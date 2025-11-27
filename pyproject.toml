@@ -8,4 +8,15 @@ authors = [
     {name = "Firstname Lastname", email = "firstname.lastname@domain.x"},
 ]
 description = "Extreme calculator"
-version = '0.0.0'
+dynamic = ["version"]
+license = "CECILL-C"
+license-files = ["LICENSE"]
+dependencies=[
+    "f90nml",
+            ]
+
+[tool.setuptools.dynamic]
+version = {attr = "calculator.__version__"}
+
+[project.scripts]
+'calculator_add' = "calculator.cli:main"

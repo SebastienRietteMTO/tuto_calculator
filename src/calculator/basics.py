@@ -2,6 +2,8 @@
 Calculator module
 """
 
+import f90nml
+
 class Calculator():
     """
     Calculator class implementing simple operations
@@ -11,4 +13,4 @@ class Calculator():
         """
         Returns the addition of a with b
         """
-        return a+b
+        return a-b
