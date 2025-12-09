@@ -1,0 +1,12 @@
+name: Pytest
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Install dependencies
+      run: pip install pytest
+    - name: Checking with pytest
+      run: pytest
