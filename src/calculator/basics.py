@@ -13,4 +13,4 @@ class Calculator():
         """
         Returns the addition of a with b
         """
-        return a-b
+        return a + b
